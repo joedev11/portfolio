@@ -24,7 +24,7 @@ const Projects = () => {
                     </div>
                     <div className="w-full h-min rounded-xl">
                         <a href="https://streamflix2023.netlify.app/">
-                            <img src="../Images/StreamFlix.png" alt="coming-soon" className="rounded-xl w-[400px]" />
+                            <img src="https://github.com/joedev11/portfolio/blob/master/src/Images/StreamFlix.png?raw=true" alt="coming-soon" className="rounded-xl h-[400px] w-[400px] object-contain" />
                         </a>
                     </div>
                 </div>
