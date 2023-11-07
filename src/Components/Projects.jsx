@@ -23,9 +23,11 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="w-full h-min rounded-xl">
-                        <a href="https://streamflix2023.netlify.app/">
-                            <img src="https://github.com/joedev11/portfolio/blob/master/src/Images/StreamFlix.png?raw=true" alt="coming-soon" className="rounded-xl h-[400px] w-[400px] object-contain" />
-                        </a>
+                        <div className="border-t border-zinc-800">
+                            <a href="https://streamflix2023.netlify.app/">
+                                <img src="https://github.com/joedev11/portfolio/blob/master/src/Images/StreamFlix2.png?raw=true" alt="coming-soon" className="rounded-xl h-[400px] object-cover" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className="bg-dark border-t border-zinc-800 flex-col w-full p-3 flex items-center justify-center rounded-2xl lg:rounded-3xl lg:p-4 lg:pt-6 hover:bg-dark-50 cursor-pointer transition duration-500 ease-in-out">
@@ -35,11 +37,11 @@ const Projects = () => {
                             <p className="-tracking-[0.011em] text-left text-xs text-zinc-600 font-medium leading-4 lg:text-base">Image not available</p>
                         </div>
                         <div className="flex w-[50px] lg:w-[76px] flex-row items-center h-10 overflow-hidden relative">
-                            <div className="w-[22px] h-[22px] lg:w-8 lg:h-8 left-[6px] bg-dark-300 rounded-full translate-x-2 group-hover/product:bg-purple transition duration-500 ease-in-out"></div>
+                            <div className="w-[22px] h-[22px] lg:w-8 lg:h-8 left-[6px] bg-dark-300 rounded-full translate-x-2 group-hover/product:bg-purple transition duration-600 ease-in-out"></div>
                         </div>
                     </div>
                     <div className="w-full h-min">
-                        <img src="https://i.pinimg.com/1200x/72/8b/6c/728b6c0d58d7e6b29e91faf8a1a31bc4.jpg" alt="coming-soon" className="rounded-xl w-[400px]" />
+                        <img src="https://i.pinimg.com/1200x/72/8b/6c/728b6c0d58d7e6b29e91faf8a1a31bc4.jpg" alt="coming-soon" className="rounded-xl h-[400px] w-[534px] object-cover" />
                     </div>
                 </div>
             </div>
