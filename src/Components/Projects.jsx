@@ -1,5 +1,4 @@
 import React from 'react';
-import StreamFlix from '../Images/StreamFlix.png'
 
 const Projects = () => {
     return(
@@ -40,9 +39,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="w-full h-min">
-                        <a href="#">
-                            <img src="https://i.pinimg.com/1200x/72/8b/6c/728b6c0d58d7e6b29e91faf8a1a31bc4.jpg" alt="coming-soon" className="rounded-xl w-[400px]" />
-                        </a>
+                        <img src="https://i.pinimg.com/1200x/72/8b/6c/728b6c0d58d7e6b29e91faf8a1a31bc4.jpg" alt="coming-soon" className="rounded-xl w-[400px]" />
                     </div>
                 </div>
             </div>
