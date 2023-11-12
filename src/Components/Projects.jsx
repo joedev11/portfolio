@@ -23,9 +23,9 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="w-full h-min rounded-xl">
-                        <div className="border-t border-zinc-800">
+                        <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min">
                             <a href="https://streamflix2023.netlify.app/">
-                                <img src="https://github.com/joedev11/portfolio/blob/master/src/Images/StreamFlix2.png?raw=true" alt="coming-soon" className="rounded-xl h-[400px] object-cover" />
+                                <img src="https://github.com/joedev11/portfolio/blob/master/src/Images/StreamFlix2.png?raw=true" alt="coming-soon" className="border border-gray-800 rounded-xl h-[400px] object-cover" />
                             </a>
                         </div>
                     </div>
@@ -40,8 +40,10 @@ const Projects = () => {
                             <div className="w-[22px] h-[22px] lg:w-8 lg:h-8 left-[6px] bg-dark-300 rounded-full translate-x-2 group-hover/product:bg-purple transition duration-600 ease-in-out"></div>
                         </div>
                     </div>
-                    <div className="w-full h-min">
-                        <img src="https://github.com/joedev11/portfolio/blob/master/src/Images/Datepicker.png" alt="datepicker-img" className="rounded-xl h-[400px] w-[534px] object-cover" />
+                    <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min">
+                        <a href="https://datepicker-trend.netlify.app/">
+                            <img src="https://github.com/joedev11/portfolio/blob/master/src/Images/Datepicker.png?raw=true" alt="datepicker-img" className="h-[400px] object-contain" />
+                        </a>
                     </div>
                 </div>
             </div>
