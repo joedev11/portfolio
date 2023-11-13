@@ -41,7 +41,7 @@ const Projects = () => {
                         <div className="w-full h-min rounded-xl hover:z-10 hover:-ml-[450px] duration-500 ease-in-out">
                             <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min hover:w-[900px] hover:z-10 duration-500 ease-in-out">
                                 <a href="https://streamflix2023.netlify.app/">
-                                    <img src="https://github.com/joedev11/portfolio/blob/master/src/Images/StreamFlix2.png?raw=true" alt="coming-soon" className="border border-gray-800 rounded-xl h-[400px] object-cover hover:h-[550px] hover:object-fill duration-500 ease-in-out" />
+                                    <img src="/Images/StreamFlix2.png" alt="StreamFlix-img" className="border border-gray-800 rounded-xl h-[400px] object-cover hover:h-[550px] hover:object-fill duration-500 ease-in-out" />
                                 </a>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ const Projects = () => {
                         <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min hover:z-10 hover:-ml-[450px] duration-500 ease-in-out">
                             <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min hover:w-[900px] hover:z-10 duration-500 ease-in-out">
                                 <a href="https://datepicker-trend.netlify.app/">
-                                    <img src="https://github.com/joedev11/portfolio/blob/master/src/Images/Datepicker.png?raw=true" alt="datepicker-img" className="border border-gray-800 rounded-xl h-[400px] object-cover hover:h-[550px] hover:object-fill duration-500 ease-in-out" />
+                                    <img src="/Images/Datepicker.png" alt="datepicker-img" className="border border-gray-800 rounded-xl h-[400px] object-cover hover:h-[550px] hover:object-fill duration-500 ease-in-out" />
                                 </a>
                             </div>
                         </div>
