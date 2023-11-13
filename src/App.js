@@ -9,8 +9,8 @@ import Footer from'./Components/Footer'
 
 function App() {
   return (
-    <div className="App  bg-zinc-950">
-      <main className="flex min-h-screen min-w-screen flex-col items-center p-6 max-w-[1200px] mx-auto relative">
+    <div className="p-0 m-0 App bg-[#171A22]">
+      <main className="relative flex flex-col items-center w-full min-h-screen mx-auto min-w-screen">
         <Navbar />
         <Header />
         <AboutMe />

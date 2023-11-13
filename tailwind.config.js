@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       colors: {
         'dark': '#1A1A1A'
-      }
+      },
+      fontFamily: {
+        'mr-dafoe': ['Mr Dafoe', 'sans-serif'],
+      },
     },
   },
   plugins: [],
