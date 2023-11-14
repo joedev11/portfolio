@@ -9,7 +9,7 @@ const ContactMe = () => {
                 </div>
                 <button className="px-2 laptop:px-8 py-2 transition duration-700 rounded-full bg-[#FCD667] laptop:py-4 hover:bg-dark-100">
                     <div className="justify-start outline-none shrink-0">
-                        <h3 className="text-center laptop:text-start laptop:text-[28px] font-bold -tracking-[0.02em] leading-8 text-[#262937]">joeldimayuga11@gmail.com</h3>
+                        <a href="mailto:joeldimayuga11@gmail.com" className="text-center laptop:text-start laptop:text-[28px] font-bold -tracking-[0.02em] leading-8 text-[#262937]">joeldimayuga11@gmail.com</a>
                     </div>
                 </button>
             </div>
