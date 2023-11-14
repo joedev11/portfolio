@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <section id="home" className="bg-[#1D1F2A] w-full h-screen laptop:h-[1080px]">
+        <section id="home" className="bg-[#1D1F2A] w-full h-fit laptop:h-[1080px] pb-10 laptop:pb-0">
             <div className="flex flex-col laptop:flex-row mt-20 mx-10 laptop:mt-[120px] laptop:mx-[100px] laptop:h-[800px]">
                 <div className="flex flex-col mt-4 laptop:w-[55%] laptop:pl-[200px] laptop:pt-[260px]">
                     <p className="text-[#FCD667] tracking-widest">

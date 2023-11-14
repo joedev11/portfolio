@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMe = () => {
     return (
-        <section id="about-me" className="mt-12 h-screen laptop:h-[1080px]">
+        <section id="about-me" className="mt-12 h-fit laptop:h-[1080px]">
             <div className="laptop:w-[60%] laptop:items-center laptop:my-[100px] flex flex-row laptop:flex-col justify-center mx-10 laptop:mx-auto">
                 <div className="flex flex-col justify-center gap-6 laptop:gap-16 laptop:flex-row">
                     <div className="">

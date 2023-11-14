@@ -2,8 +2,8 @@ import React from 'react';
 
 const ContactMe = () => {
     return(
-        <div id="contact-me" className="flex flex-col justify-center items-center mt-4 w-[90%] laptop:w-full mb-12 bg-[#1D1F2A]">
-            <div className="flex flex-col justify-between w-full laptop:w-[70%] p-6 laptop:mt-20 border border-b-0 rounded-b-none rounded-3xl border-zinc-800 bg-[#262937] laptop:p-12 laptop:flex-row">
+        <div id="contact-me" className="flex flex-col justify-center h-fit items-center mt-4 w-full p-2 laptop:w-full mb-12 bg-[#1D1F2A]">
+            <div className="flex flex-col justify-between w-[90%] laptop:w-[70%] p-6 laptop:mt-20 border border-b-0 rounded-b-none rounded-3xl border-zinc-800 bg-[#262937] laptop:p-12 laptop:flex-row">
                 <div className="flex flex-col items-center gap-8 laptop:flex-row">
                     <h3 className="text-lg font-medium leading-9 text-start laptop:text-[40px] text-white">Want to work together?</h3>
                 </div>
