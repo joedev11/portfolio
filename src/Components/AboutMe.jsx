@@ -18,8 +18,8 @@ const AboutMe = () => {
                         </div>
                         <h1 className="text-[#FCD667] font-mr-dafoe text-4xl laptop:text-6xl mt-7 laptop:mt-16">JoelDimayuga</h1>
                         <div className="mt-8 laptop:mt-[60px] flex">
-                            <button className="bg-[#FCD667] text-[#1D1F2A] rounded-md font-bold laptop:font-extrabold py-4 mr-8 laptop:mr-20 tracking-widest w-[130px] laptop:w-[200px] hover:w-[250px] hover:text-white ease-in-out duration-300">EMAIL ME</button>
-                            <button className="bg-[#FCD667] text-[#1D1F2A] rounded-md font-bold laptop:font-extrabold py-4 tracking-widest w-[150px] laptop:w-[200px] hover:w-[250px] hover:text-white ease-in-out duration-300">DOWNLOAD CV</button>
+                            <button className="bg-[#FCD667] text-[#1D1F2A] rounded-md font-bold laptop:font-extrabold py-2 laptop:py-4 mr-8 laptop:mr-20 laptop:tracking-widest w-[130px] laptop:w-[200px] hover:w-[250px] hover:text-white ease-in-out duration-300">EMAIL ME</button>
+                            <button className="bg-[#FCD667] text-[#1D1F2A] rounded-md font-bold laptop:font-extrabold laptop:py-4 laptop:tracking-widest w-[150px] laptop:w-[200px] hover:w-[250px] hover:text-white ease-in-out duration-300">DOWNLOAD CV</button>
                         </div>
                     </div>
                     

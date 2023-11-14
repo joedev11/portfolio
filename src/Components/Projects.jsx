@@ -29,9 +29,9 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className={`w-full h-min rounded-xl ${!viewComingSoon ? 'hidden' : ''}`}>
-                            <div className="w-full border border-zinc-700 rounded-xl bg-[#FCD667] h-[400px] flex items-center justify-center hover:h-[450px] ease-in-out duration-300">
+                            <div className="w-full border border-zinc-700 rounded-xl bg-[#FCD667] h-[400px] flex items-center justify-center laptop:hover:h-[450px] ease-in-out duration-300">
                                 <a href="#addNew" className=''>
-                                    <img src="/Images/plus.png" alt="coming-soon" className="object-cover h-16 m-auto duration-300 ease-in-out hover:h-20" />
+                                    <img src="/Images/plus.png" alt="coming-soon" className="object-cover h-16 m-auto duration-300 ease-in-out laptop:hover:h-20" />
                                 </a>
                             </div>
                         </div>
@@ -43,10 +43,10 @@ const Projects = () => {
                                 <p className="-tracking-[0.011em] text-left text-xs text-zinc-600 font-medium leading-4 lg:text-base">Movie Trailer Streaming Site</p>
                             </div>
                         </div>
-                        <div className={`w-full h-min rounded-xl hover:z-10 hover:-ml-[450px] duration-500 ease-in-out ${!viewStreamFlix ? 'hidden' : ''}`}>
-                            <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min hover:w-[900px] hover:z-10 duration-500 ease-in-out">
+                        <div className={`w-full h-min rounded-xl laptop:hover:z-10 laptop:hover:-ml-[450px] duration-500 ease-in-out ${!viewStreamFlix ? 'hidden' : ''}`}>
+                            <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min laptop:hover:w-[900px] laptop:hover:z-10 duration-500 ease-in-out">
                                 <a href="https://streamflix2023.netlify.app/">
-                                    <img src="/Images/StreamFlix2.png" alt="StreamFlix-img" className="border border-gray-800 rounded-xl h-[400px] object-cover hover:h-[550px] hover:object-fill duration-500 ease-in-out" />
+                                    <img src="/Images/StreamFlix2.png" alt="StreamFlix-img" className="border border-gray-800 rounded-xl h-[400px] object-cover laptop:hover:h-[550px] laptop:hover:object-fill duration-500 ease-in-out" />
                                 </a>
                             </div>
                         </div>
@@ -58,10 +58,10 @@ const Projects = () => {
                                 <p className="-tracking-[0.011em] text-left text-xs text-zinc-600 font-medium leading-4 lg:text-base">Created a Datepicker Component from Scratch</p>
                             </div>
                         </div>
-                        <div className={`w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min hover:z-10 hover:-ml-[450px] duration-500 ease-in-out ${!viewDatePicker ? 'hidden' : ''}`}>
-                            <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min hover:w-[900px] hover:z-10 duration-500 ease-in-out">
+                        <div className={`w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min laptop:hover:z-10 laptop:hover:-ml-[450px] duration-500 ease-in-out ${!viewDatePicker ? 'hidden' : ''}`}>
+                            <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min laptop:hover:w-[900px] laptop:hover:z-10 duration-500 ease-in-out">
                                 <a href="https://datepicker-trend.netlify.app/">
-                                    <img src="/Images/Datepicker.png" alt="datepicker-img" className="border border-gray-800 rounded-xl h-[400px] object-cover hover:h-[550px] hover:object-fill duration-500 ease-in-out" />
+                                    <img src="/Images/Datepicker.png" alt="datepicker-img" className="border border-gray-800 rounded-xl h-[400px] object-cover laptop:hover:h-[550px] laptop:hover:object-fill duration-500 ease-in-out" />
                                 </a>
                             </div>
                         </div>
