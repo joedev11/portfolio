@@ -1,26 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Projects = () => {
+    const [viewComingSoon, setViewComingSoon] = useState(true);
+    const [viewStreamFlix, setViewStreamFlix] = useState(true);
+    const [viewDatePicker, setViewDatePicker] = useState(true);
+
+    
+  const togglePreview = () => {
+    setViewComingSoon(!viewComingSoon);
+    setViewStreamFlix(!viewComingSoon);
+    setViewDatePicker(!viewComingSoon);
+  };
     return(
-        <section id="portfolio" className="mt-12 w-full bg-[#1D1F2A]">
-            <div className="flex flex-col h-[1080px] items-center justify-center mx-auto w-[65%]">
+        <section id="portfolio" className="mt-12 w-full bg-[#1D1F2A] h-fit laptop:h-[1080px]">
+            <div className="flex flex-col items-center justify-center mt-8 mx-10 laptop:mx-auto laptop:w-[65%]">
                 <div className="flex flex-col items-center justify-center">
-                    <p className="mt-2 text-5xl font-bold text-[#FCD667]">Featured Works</p>
-                    <p className="mt-8 text-xl leading-9 text-gray-300">Here are some projects I've worked on as I continue my journey in web development. </p>
-                    <p className="mt-2 text-xl leading-9 text-gray-300">Excited to share and learn together!</p>
+                    <p className="mt-2 text-2xl laptop:text-5xl font-bold text-[#FCD667]">Featured Works</p>
+                    <p className="mt-6 text-gray-300 laptop:leading-9 laptop:mt-8 laptop:text-xl">Here are some projects I've worked on as I continue my journey in web development. </p>
+                    <p className="mt-3 text-gray-300 laptop:leading-9 laptop:text-xl">Excited to share and learn together!</p>
                 </div>
-                <div className="grid w-full grid-cols-3 gap-5 mt-16 mx-">
-                    <div className="flex flex-col items-center justify-center w-full p-3 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl lg:rounded-3xl lg:p-4 lg:pt-6 hover:bg-dark-50">
+                <button onClick={togglePreview} className="ml-48 rounded-md mt-9 laptop:hidden bg-[#FCD667] text-[#1D1F2A] font-bold laptop:font-extrabold py-1 laptop:py-4 tracking-wide text-xs laptop:text-md w-[120px] laptop:w-[200px] ease-in-out duration-300">HIDE PREVIEW</button>
+                <div className="grid w-full grid-rows-3 gap-5 mt-4 mb-8 laptop:mt-16 laptop:grid-cols-3 h-min">
+                    <div className="flex flex-col items-center justify-center w-full p-3 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl lg:rounded-3xl lg:p-4 lg:pt-6 hover:bg-dark-50 h-fit">
                         <div className="w-full px-2 mb-3">
                             <div className="gap-[2px]">
                                 <p className="text-base -tracking-[0.011em] text-left font-medium text-white leading-6 lg:text-2xl">Coming Soon..</p>
                                 <p className="-tracking-[0.011em] text-left text-xs text-zinc-600 font-medium leading-4 lg:text-base">Developing, standby</p>
                             </div>
-                            <div className="flex w-[50px] lg:w-[76px] flex-row items-center h-10 overflow-hidden relative">
-                                <div className="w-[22px] h-[22px] lg:w-8 lg:h-8 left-[6px] bg-dark-300 rounded-full translate-x-2 group-hover/product:bg-purple transition duration-500 ease-in-out"></div>
-                            </div>
                         </div>
-                        <div className="w-full h-min rounded-xl">
+                        <div className={`w-full h-min rounded-xl ${!viewComingSoon ? 'hidden' : ''}`}>
                             <div className="w-full border border-zinc-700 rounded-xl bg-[#FCD667] h-[400px] flex items-center justify-center hover:h-[450px] ease-in-out duration-300">
                                 <a href="#addNew" className=''>
                                     <img src="/Images/plus.png" alt="coming-soon" className="object-cover h-16 m-auto duration-300 ease-in-out hover:h-20" />
@@ -28,17 +36,14 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center w-full p-3 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl lg:rounded-3xl lg:p-4 lg:pt-6 hover:bg-dark-50">
+                    <div className="flex flex-col items-center justify-center w-full p-3 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl lg:rounded-3xl lg:p-4 lg:pt-6 hover:bg-dark-50 h-min">
                         <div className="w-full px-2 mb-3">
                             <div className="gap-[2px]">
                                 <p className="text-base -tracking-[0.011em] text-left font-medium text-white leading-6 lg:text-2xl">StreamFlix</p>
                                 <p className="-tracking-[0.011em] text-left text-xs text-zinc-600 font-medium leading-4 lg:text-base">Movie Trailer Streaming Site</p>
                             </div>
-                            <div className="flex w-[50px] lg:w-[76px] flex-row items-center h-10 overflow-hidden relative">
-                                <div className="w-[22px] h-[22px] lg:w-8 lg:h-8 left-[6px] bg-dark-300 rounded-full translate-x-2 group-hover/product:bg-purple transition duration-500 ease-in-out"></div>
-                            </div>
                         </div>
-                        <div className="w-full h-min rounded-xl hover:z-10 hover:-ml-[450px] duration-500 ease-in-out">
+                        <div className={`w-full h-min rounded-xl hover:z-10 hover:-ml-[450px] duration-500 ease-in-out ${!viewStreamFlix ? 'hidden' : ''}`}>
                             <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min hover:w-[900px] hover:z-10 duration-500 ease-in-out">
                                 <a href="https://streamflix2023.netlify.app/">
                                     <img src="/Images/StreamFlix2.png" alt="StreamFlix-img" className="border border-gray-800 rounded-xl h-[400px] object-cover hover:h-[550px] hover:object-fill duration-500 ease-in-out" />
@@ -52,11 +57,8 @@ const Projects = () => {
                                 <p className="text-base -tracking-[0.011em] text-left font-medium text-white leading-6 lg:text-2xl">Datepicker Component</p>
                                 <p className="-tracking-[0.011em] text-left text-xs text-zinc-600 font-medium leading-4 lg:text-base">Created a Datepicker Component from Scratch</p>
                             </div>
-                            <div className="flex w-[50px] lg:w-[76px] flex-row items-center h-10 overflow-hidden relative">
-                                <div className="w-[22px] h-[22px] lg:w-8 lg:h-8 left-[6px] bg-dark-300 rounded-full translate-x-2 group-hover/product:bg-purple transition duration-600 ease-in-out"></div>
-                            </div>
                         </div>
-                        <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min hover:z-10 hover:-ml-[450px] duration-500 ease-in-out">
+                        <div className={`w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min hover:z-10 hover:-ml-[450px] duration-500 ease-in-out ${!viewDatePicker ? 'hidden' : ''}`}>
                             <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min hover:w-[900px] hover:z-10 duration-500 ease-in-out">
                                 <a href="https://datepicker-trend.netlify.app/">
                                     <img src="/Images/Datepicker.png" alt="datepicker-img" className="border border-gray-800 rounded-xl h-[400px] object-cover hover:h-[550px] hover:object-fill duration-500 ease-in-out" />
@@ -66,7 +68,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col social-icons items-left">
+            <div className="flex-col hidden laptop:flex social-icons items-left">
                 <div className="flex ml-[80px] mt-12 mb-12">
                     <a href="https://www.linkedin.com/in/john-michael-dimayuga-72482415a/a" className="">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="40" viewBox="0,0,256,256" className="hover:h-[50px] ease-in-out duration-300">

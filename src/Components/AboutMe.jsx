@@ -16,10 +16,10 @@ const AboutMe = () => {
                             <p className="mt-5 text-lg text-gray-300 laptop:leading-9 laptop:text-xl">Hi there, I'm John Michael Dimayuga, though most people know me as Joel. My academic journey led me to De La Salle University-Manila, where I earned a Bachelor's Degree in Mechanical Engineering.</p>
                             <p className="mt-5 text-lg text-gray-300 laptop:text-xl laptop:leading-9">After four rewarding years as an engineer, I felt a calling to delve into the dynamic world of web development. Embracing this passion, I pursued a comprehensive bootcamp that opened the door to my career as a Software Developer. <span className="hidden laptop:inline">Through these experiences, I've cultivated a diverse skill set that fuels my ongoing growth as a Frontend Developer.</span></p>
                         </div>
-                        <h1 className="text-[#FCD667] font-mr-dafoe text-4xl laptop:text-6xl mt-5 laptop:mt-16">JoelDimayuga</h1>
-                        <div className="mt-7 laptop:mt-[60px] flex">
-                            <button className="bg-[#FCD667] text-[#1D1F2A] font-bold laptop:font-extrabold py-4 mr-8 laptop:mr-20 tracking-widest w-[130px] laptop:w-[200px] hover:w-[250px] hover:text-white ease-in-out duration-300">EMAIL ME</button>
-                            <button className="bg-[#FCD667] text-[#1D1F2A] font-bold laptop:font-extrabold py-4 tracking-widest w-[150px] laptop:w-[200px] hover:w-[250px] hover:text-white ease-in-out duration-300">DOWNLOAD CV</button>
+                        <h1 className="text-[#FCD667] font-mr-dafoe text-4xl laptop:text-6xl mt-7 laptop:mt-16">JoelDimayuga</h1>
+                        <div className="mt-8 laptop:mt-[60px] flex">
+                            <button className="bg-[#FCD667] text-[#1D1F2A] rounded-md font-bold laptop:font-extrabold py-4 mr-8 laptop:mr-20 tracking-widest w-[130px] laptop:w-[200px] hover:w-[250px] hover:text-white ease-in-out duration-300">EMAIL ME</button>
+                            <button className="bg-[#FCD667] text-[#1D1F2A] rounded-md font-bold laptop:font-extrabold py-4 tracking-widest w-[150px] laptop:w-[200px] hover:w-[250px] hover:text-white ease-in-out duration-300">DOWNLOAD CV</button>
                         </div>
                     </div>
                     
