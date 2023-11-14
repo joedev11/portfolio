@@ -12,15 +12,15 @@ const Projects = () => {
     setViewDatePicker(!viewComingSoon);
   };
     return(
-        <section id="portfolio" className="mt-12 w-full bg-[#1D1F2A] h-fit laptop:h-[1080px]">
-            <div className="flex flex-col items-center justify-center mt-8 mx-10 laptop:mx-auto laptop:w-[65%]">
+        <section id="portfolio" className="mt-12 w-full bg-[#1D1F2A] h-fit laptop:h-[1080px] flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center mt-8 laptop:mt-12 mx-10 laptop:mx-auto laptop:w-[80%]">
                 <div className="flex flex-col items-center justify-center">
                     <p className="mt-2 text-2xl laptop:text-5xl font-bold text-[#FCD667]">Featured Works</p>
                     <p className="mt-6 text-gray-300 laptop:leading-9 laptop:mt-8 laptop:text-xl">Here are some projects I've worked on as I continue my journey in web development. </p>
                     <p className="mt-3 text-gray-300 laptop:leading-9 laptop:text-xl">Excited to share and learn together!</p>
                 </div>
                 <button onClick={togglePreview} className="ml-48 rounded-md mt-9 laptop:hidden bg-[#FCD667] text-[#1D1F2A] font-bold laptop:font-extrabold py-1 laptop:py-4 tracking-wide text-xs laptop:text-md w-[120px] laptop:w-[200px] ease-in-out duration-300">HIDE PREVIEW</button>
-                <div className="grid w-full grid-rows-3 gap-5 mt-4 mb-8 laptop:mt-16 laptop:grid-cols-3 h-min">
+                <div className="grid w-full grid-rows-3 gap-5 mt-4 mb-8 laptop:mt-16 laptop:grid-cols-3 laptop:grid-rows-1 h-min">
                     <div className="flex flex-col items-center justify-center w-full p-3 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl lg:rounded-3xl lg:p-4 lg:pt-6 hover:bg-dark-50 h-fit">
                         <div className="w-full px-2 mb-3">
                             <div className="gap-[2px]">
