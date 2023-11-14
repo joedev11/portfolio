@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed flex items-center w-full justify-between py-2 laptop:py-7 px-10 laptop:px-[80px] z-10 bg-[#171A22] opacity-80">
+    <div className="fixed flex items-center w-full justify-between py-2 laptop:py-7 px-10 laptop:px-[80px] bg-[#171A22] opacity-80">
       <div className="laptop:w-[200px] w-full">
         <p className="font-bold text-xl laptop:text-[50px] text-[#FCD667]">JDPort</p>
       </div>
