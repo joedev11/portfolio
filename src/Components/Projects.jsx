@@ -4,54 +4,71 @@ const Projects = () => {
     const [viewComingSoon, setViewComingSoon] = useState(true);
     const [viewStreamFlix, setViewStreamFlix] = useState(true);
     const [viewDatePicker, setViewDatePicker] = useState(true);
+    const [viewKumoriArt, setViewKumoriArt] = useState(true);
 
     
   const togglePreview = () => {
     setViewComingSoon(!viewComingSoon);
-    setViewStreamFlix(!viewComingSoon);
-    setViewDatePicker(!viewComingSoon);
+    setViewStreamFlix(!viewStreamFlix);
+    setViewDatePicker(!viewDatePicker);
+    setViewKumoriArt(!viewKumoriArt);
   };
     return(
-        <section id="portfolio" className="mt-12 w-full bg-[#1D1F2A] h-fit laptop:h-[1080px] flex flex-col items-center justify-center">
-            <div className="flex flex-col items-center justify-center mt-8 laptop:mt-12 mx-10 laptop:mx-auto laptop:w-[80%]">
+        <section id="portfolio" className="mt-12 w-full bg-[#1D1F2A] h-fit flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center mt-8 laptop:mt-12 mx-10 laptop:mx-auto laptop:w-[85%]">
                 <div className="flex flex-col items-center justify-center">
                     <p className="mt-2 text-2xl laptop:text-5xl font-bold text-[#FCD667]">Featured Works</p>
                     <p className="mt-6 text-gray-300 laptop:leading-9 laptop:mt-8 laptop:text-xl">Here are some projects I've worked on as I continue my journey in web development. </p>
                     <p className="mt-3 text-gray-300 laptop:leading-9 laptop:text-xl">Excited to share and learn together!</p>
                 </div>
                 <button onClick={togglePreview} className="ml-48 rounded-md mt-9 laptop:hidden bg-[#FCD667] text-[#1D1F2A] font-bold laptop:font-extrabold py-1 laptop:py-4 tracking-wide text-xs laptop:text-md w-[120px] laptop:w-[200px] ease-in-out duration-300">HIDE PREVIEW</button>
-                <div className="grid w-full grid-rows-3 gap-5 mt-4 mb-8 laptop:mt-16 laptop:grid-cols-3 laptop:grid-rows-1 h-min">
-                    <div className="flex flex-col items-center justify-center w-full p-3 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl lg:rounded-3xl lg:p-4 lg:pt-6 hover:bg-dark-50 h-fit">
+                <div className="flex flex-row flex-wrap justify-center w-full gap-4 mt-4 mb-8 h-min">
+                    <div className="flex flex-col items-center justify-center w-full laptop:w-[400px] p-2 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl laptop:p-4 laptop:pt-6 hover:bg-dark-50 h-fit">
                         <div className="w-full px-2 mb-3">
                             <div className="gap-[2px]">
                                 <p className="text-base -tracking-[0.011em] text-left font-medium text-white leading-6 lg:text-2xl">Coming Soon..</p>
                                 <p className="-tracking-[0.011em] text-left text-xs text-zinc-600 font-medium leading-4 lg:text-base">Developing, standby</p>
                             </div>
                         </div>
-                        <div className={`w-full h-min rounded-xl ${!viewComingSoon ? 'hidden' : ''}`}>
-                            <div className="w-full border border-zinc-700 rounded-xl bg-[#FCD667] h-[400px] flex items-center justify-center laptop:hover:h-[450px] ease-in-out duration-300">
+                        <div className={`w-full h-min laptop:mt-5 rounded-xl ${!viewComingSoon ? 'hidden' : ''}`}>
+                            <div className="w-full border border-zinc-700 rounded-xl bg-[#FCD667] h-[200px] laptop:h-[400px] flex items-center justify-center laptop:hover:h-[450px] ease-in-out duration-300">
                                 <a href="#addNew" className=''>
                                     <img src="/Images/plus.png" alt="coming-soon" className="object-cover h-16 m-auto duration-300 ease-in-out laptop:hover:h-20" />
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center w-full p-3 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl lg:rounded-3xl lg:p-4 lg:pt-6 hover:bg-dark-50 h-min">
+                    <div className="flex flex-col items-center justify-center w-full laptop:w-[400px] p-2 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl laptop:p-4 laptop:pt-6 hover:bg-dark-50 h-min">
                         <div className="w-full px-2 mb-3">
                             <div className="gap-[2px]">
                                 <p className="text-base -tracking-[0.011em] text-left font-medium text-white leading-6 lg:text-2xl">StreamFlix</p>
                                 <p className="-tracking-[0.011em] text-left text-xs text-zinc-600 font-medium leading-4 lg:text-base">Movie Trailer Streaming Site</p>
                             </div>
                         </div>
-                        <div className={`w-full h-min rounded-xl laptop:hover:z-10 laptop:hover:-ml-[450px] duration-500 ease-in-out ${!viewStreamFlix ? 'hidden' : ''}`}>
+                        <div className={`w-full h-min laptop:mt-5 rounded-lg laptop:hover:z-10 laptop:hover:-ml-[450px] duration-500 ease-in-out ${!viewStreamFlix ? 'hidden' : ''}`}>
                             <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min laptop:hover:w-[900px] laptop:hover:z-10 duration-500 ease-in-out">
                                 <a href="https://streamflix2023.netlify.app/">
-                                    <img src="/Images/StreamFlix2.png" alt="StreamFlix-img" className="border border-gray-800 rounded-xl h-[400px] object-cover laptop:hover:h-[550px] laptop:hover:object-fill duration-500 ease-in-out" />
+                                    <img src="/Images/StreamFlix2.png" alt="StreamFlix-img" className="border border-gray-800 rounded-xl h-[200px] laptop:h-[400px] object-cover laptop:hover:h-[550px] laptop:hover:object-fill duration-500 ease-in-out" />
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center w-full p-3 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl lg:rounded-3xl lg:p-4 lg:pt-6 hover:bg-dark-50">
+                    <div className="flex flex-col items-center justify-center w-full laptop:w-[400px] p-2 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl laptop:p-4 laptop:pt-6 hover:bg-dark-50 h-min">
+                        <div className="w-full px-2 mb-3">
+                            <div className="gap-[2px]">
+                                <p className="text-base -tracking-[0.011em] text-left font-medium text-white leading-6 lg:text-2xl">KumoriArt</p>
+                                <p className="-tracking-[0.011em] text-left text-xs text-zinc-600 font-medium leading-4 lg:text-base">Dive into a collection of exquisite wallpapers to elevate your digital space instantly. </p>
+                            </div>
+                        </div>
+                        <div className={`w-full h-min rounded-xl laptop:hover:z-10 laptop:hover:-ml-[450px] duration-500 ease-in-out ${!viewKumoriArt ? 'hidden' : ''}`}>
+                            <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min laptop:hover:w-[900px] laptop:hover:z-10 duration-500 ease-in-out">
+                                <a href="https://kumori-art.netlify.app/">
+                                    <img src="/Images/kumori-art.png" alt="StreamFlix-img" className="border border-gray-800 rounded-xl h-[200px] laptop:h-[400px] object-cover laptop:hover:h-[550px] laptop:hover:object-fill duration-500 ease-in-out" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-center justify-center w-full laptop:w-[400px] p-2 transition duration-500 ease-in-out border-t cursor-pointer bg-[#262937] border-zinc-800 rounded-2xl laptop:p-4 laptop:pt-6 hover:bg-dark-50">
                         <div className="w-full px-2 mb-3">
                             <div className="gap-[2px]">
                                 <p className="text-base -tracking-[0.011em] text-left font-medium text-white leading-6 lg:text-2xl">Datepicker Component</p>
@@ -61,15 +78,15 @@ const Projects = () => {
                         <div className={`w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min laptop:hover:z-10 laptop:hover:-ml-[450px] duration-500 ease-in-out ${!viewDatePicker ? 'hidden' : ''}`}>
                             <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min laptop:hover:w-[900px] laptop:hover:z-10 duration-500 ease-in-out">
                                 <a href="https://datepicker-trend.netlify.app/">
-                                    <img src="/Images/Datepicker.png" alt="datepicker-img" className="border border-gray-800 rounded-xl h-[400px] object-cover laptop:hover:h-[550px] laptop:hover:object-fill duration-500 ease-in-out" />
+                                    <img src="/Images/Datepicker.png" alt="datepicker-img" className="border border-gray-800 rounded-xl h-[200px] laptop:h-[400px] object-cover laptop:hover:h-[550px] laptop:hover:object-fill duration-500 ease-in-out" />
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="flex-col hidden laptop:flex social-icons items-left">
-                <div className="flex ml-[80px] mt-12 mb-12">
+            <div className="flex-col hidden laptop:flex social-icons">
+                <div className="flex justify-center gap-8 mt-12 mb-12">
                     <a href="https://www.linkedin.com/in/john-michael-dimayuga-72482415a/a" className="">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="40" viewBox="0,0,256,256" className="hover:h-[50px] ease-in-out duration-300">
                             <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(5.33333,5.33333)"><path d="M11.5,6c-3.01977,0 -5.5,2.48023 -5.5,5.5v25c0,3.01977 2.48023,5.5 5.5,5.5h25c3.01977,0 5.5,-2.48023 5.5,-5.5v-25c0,-3.01977 -2.48023,-5.5 -5.5,-5.5zM11.5,9h25c1.39823,0 2.5,1.10177 2.5,2.5v25c0,1.39823 -1.10177,2.5 -2.5,2.5h-25c-1.39823,0 -2.5,-1.10177 -2.5,-2.5v-25c0,-1.39823 1.10177,-2.5 2.5,-2.5zM15.5,13c-1.38071,0 -2.5,1.11929 -2.5,2.5c0,1.38071 1.11929,2.5 2.5,2.5c1.38071,0 2.5,-1.11929 2.5,-2.5c0,-1.38071 -1.11929,-2.5 -2.5,-2.5zM14,20c-0.553,0 -1,0.447 -1,1v13c0,0.553 0.447,1 1,1h3c0.553,0 1,-0.447 1,-1v-13c0,-0.553 -0.447,-1 -1,-1zM21,20c-0.553,0 -1,0.447 -1,1v13c0,0.553 0.447,1 1,1h3c0.553,0 1,-0.447 1,-1v-7.5c0,-1.379 1.121,-2.5 2.5,-2.5c1.379,0 2.5,1.121 2.5,2.5v7.5c0,0.553 0.447,1 1,1h3c0.553,0 1,-0.447 1,-1v-8c0,-3.309 -2.691,-6 -6,-6c-1.538,0 -2.937,0.58602 -4,1.54102v-0.54102c0,-0.553 -0.447,-1 -1,-1z"></path></g></g>
