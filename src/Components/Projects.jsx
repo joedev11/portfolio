@@ -75,7 +75,7 @@ const Projects = () => {
                                 <p className="-tracking-[0.011em] text-left text-xs text-zinc-600 font-medium leading-4 lg:text-base">Created a Datepicker Component from Scratch</p>
                             </div>
                         </div>
-                        <div className={`w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min laptop:hover:z-10 laptop:hover:-ml-[450px] duration-500 ease-in-out ${!viewDatePicker ? 'hidden' : ''}`}>
+                        <div className={`w-full border laptop:mt-5 border-zinc-700 rounded-xl bg-zinc-800 h-min laptop:hover:z-10 laptop:hover:-ml-[450px] duration-500 ease-in-out ${!viewDatePicker ? 'hidden' : ''}`}>
                             <div className="w-full border border-zinc-700 rounded-xl bg-zinc-800 h-min laptop:hover:w-[900px] laptop:hover:z-10 duration-500 ease-in-out">
                                 <a href="https://datepicker-trend.netlify.app/">
                                     <img src="/Images/Datepicker.png" alt="datepicker-img" className="border border-gray-800 rounded-xl h-[200px] laptop:h-[400px] object-cover laptop:hover:h-[550px] laptop:hover:object-fill duration-500 ease-in-out" />
