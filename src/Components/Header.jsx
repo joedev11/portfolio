@@ -51,7 +51,7 @@ const Header = () => {
 
             {/* Bottom tech bar */}
             <div className="bg-[#22242F] border-gray-700 mt-auto opacity-75">
-                <div className="flex justify-between px-10 laptop:px-[180px] py-4 text-gray-400 opacity-75 text-sm laptop:text-base tracking-wider">
+                <div className="flex flex-wrap justify-center laptop:justify-between gap-x-4 gap-y-2 px-10 laptop:px-[180px] py-4 text-gray-400 opacity-75 text-sm laptop:text-base tracking-wider">
                     <span>HTML5</span>
                     <span>CSS</span>
                     <span>Javascript</span>
