@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="w-full bg-[#171A22] border-t border-gray-800 py-10 flex flex-col items-center gap-4">
             <p className="text-white font-bold text-lg">Joel Dimayuga</p>
-            <p className="text-gray-500 text-sm">Designed with love, all rights reserved for Joel Dimayuga.</p>
+            <p className="text-gray-500 text-sm text-center px-4">Designed with love, all rights reserved for Joel Dimayuga.</p>
             <div className="flex gap-6 mt-2">
                 {/* Email */}
                 <a href="mailto:joeldimayuga11@gmail.com" className="text-gray-400 hover:text-[#FF7A5C] duration-300">
