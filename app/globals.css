@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS for Header Component */
+.img-with-overlay {
+    filter: grayscale(100%) sepia(20%) hue-rotate(190deg) saturate(200%) brightness(100%);
+}
+
+.bracket-left {
+    color: transparent;
+    -webkit-text-stroke: 2px #FF7A5C;
+    opacity: 0.3;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.bracket-left:hover {
+    color: #FF7A5C;
+    opacity: 0.6;
+}
+
+.img-bg {
+    background-image: url("/Images/glass.png");
+    background-position: center;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 50%;
+}

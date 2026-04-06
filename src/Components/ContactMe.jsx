@@ -1,23 +1,103 @@
-import React from 'react';
+'use client'
+
+import React, { useState } from 'react';
 
 const ContactMe = () => {
-    return(
-        <div id="contact-me" className="flex flex-col justify-center h-fit items-center mt-4 w-full p-2 laptop:w-full mb-12 bg-[#1D1F2A]">
-            <div className="flex flex-col justify-between w-[90%] laptop:w-[70%] p-6 laptop:mt-20 border border-b-0 rounded-b-none rounded-3xl border-zinc-800 bg-[#262937] laptop:p-12 laptop:flex-row">
-                <div className="flex flex-col items-center gap-8 laptop:flex-row">
-                    <h3 className="text-lg font-medium leading-9 text-start laptop:text-[40px] text-white">Want to work together?</h3>
+    const [form, setForm] = useState({ name: '', email: '', message: '' });
+    const [status, setStatus] = useState('idle'); // idle | sending | success | error
+
+    const handleChange = (e) => {
+        setForm({ ...form, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async () => {
+        if (!form.name || !form.email || !form.message) return;
+        setStatus('sending');
+
+        const res = await fetch('https://formspree.io/f/mnjolzkn', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(form),
+        });
+
+        if (res.ok) {
+            setStatus('success');
+            setForm({ name: '', email: '', message: '' });
+        } else {
+            setStatus('error');
+        }
+    };
+
+    return (
+        <section id="contact-me" className="w-full bg-[#171A22] py-20 laptop:py-28">
+            <div className="mx-10 laptop:mx-auto laptop:w-[80%]">
+
+                {/* Section label with line */}
+                <div className="flex items-center gap-4 mb-12">
+                    <span className="block w-16 h-[2px] bg-[#FF7A5C]"></span>
+                    <p className="text-gray-300 tracking-widest text-sm">Contacts</p>
                 </div>
-                <button className="px-2 laptop:px-8 py-2 transition duration-700 rounded-full bg-[#FCD667] laptop:py-4 hover:bg-dark-100">
-                    <div className="justify-start outline-none shrink-0">
-                        <a href="mailto:joeldimayuga11@gmail.com" className="text-center laptop:text-start laptop:text-[28px] font-bold -tracking-[0.02em] leading-8 text-[#262937]">joeldimayuga11@gmail.com</a>
+
+                <div className="flex flex-col laptop:flex-row gap-16 laptop:gap-0">
+                    {/* Left */}
+                    <div className="flex flex-col justify-between laptop:w-1/2">
+                        <div>
+                            <h2 className="text-white text-4xl laptop:text-5xl font-bold leading-tight">
+                                Have a project?<br />Let's talk!
+                            </h2>
+                            {status === 'success' && (
+                                <p className="mt-6 text-[#FF7A5C] text-sm">Message sent! I'll get back to you soon.</p>
+                            )}
+                            {status === 'error' && (
+                                <p className="mt-6 text-red-400 text-sm">Something went wrong. Please try again.</p>
+                            )}
+                            <button
+                                onClick={handleSubmit}
+                                disabled={status === 'sending'}
+                                className="mt-10 bg-[#FF7A5C] text-white font-semibold px-8 py-3 rounded hover:opacity-80 duration-300 disabled:opacity-50"
+                            >
+                                {status === 'sending' ? 'Sending...' : 'Submit'}
+                            </button>
+                        </div>
                     </div>
-                </button>
+
+                    {/* Right: Form */}
+                    <div className="flex flex-col gap-8 laptop:w-1/2">
+                        <div className="flex flex-col gap-1">
+                            <label className="text-gray-400 text-sm">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                value={form.name}
+                                onChange={handleChange}
+                                className="bg-transparent border-b border-gray-600 text-white py-2 outline-none focus:border-[#FF7A5C] transition-colors duration-300"
+                            />
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <label className="text-gray-400 text-sm">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                value={form.email}
+                                onChange={handleChange}
+                                className="bg-transparent border-b border-gray-600 text-white py-2 outline-none focus:border-[#FF7A5C] transition-colors duration-300"
+                            />
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <label className="text-gray-400 text-sm">Message</label>
+                            <textarea
+                                rows={4}
+                                name="message"
+                                value={form.message}
+                                onChange={handleChange}
+                                className="bg-transparent border-b border-gray-600 text-white py-2 outline-none focus:border-[#FF7A5C] transition-colors duration-300 resize-none"
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="flex flex-row bg-[#1D1F2A] rounded-3xl rounded-t-none p-[6px] rt-r-display-flex rt-r-jc-start">
-                <p className="-tracking-[0.011em] text-base w-full text-center text-zinc-400">Let's meet! Pick a Date.</p>
-            </div>
-        </div>
-    )
-}
+        </section>
+    );
+};
 
 export default ContactMe;
