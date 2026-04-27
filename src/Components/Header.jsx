@@ -4,10 +4,27 @@ const Header = () => {
   return (
     <section
       id="home"
-      className="bg-[#1a1a1a] w-full min-h-[calc(100vh-72px)] flex relative overflow-hidden"
+      className="bg-[#1a1a1a] w-full laptop:min-h-[calc(100vh-72px)] flex flex-col laptop:flex-row relative overflow-hidden"
     >
+      {/* Mobile image — above text, hidden on desktop */}
+      <div className="laptop:hidden w-full relative" style={{ height: "70vw" }}>
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 70% 80% at 60% 60%, rgba(255,122,92,0.18) 0%, #1a1a1a 70%)",
+          }}
+        />
+        <img
+          src="/Images/img-self.png"
+          alt="Joel Dimayuga"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10 h-full w-auto"
+          style={{ filter: "grayscale(100%) contrast(1.05)", objectFit: "cover", objectPosition: "top center" }}
+        />
+      </div>
+
       {/* Left: Text — vertically centered */}
-      <div className="flex flex-col justify-center w-full laptop:w-1/2 px-8 laptop:pl-[100px] laptop:pr-0 py-16 laptop:py-0 gap-3 z-10">
+      <div className="flex flex-col justify-center w-full laptop:w-1/2 px-8 laptop:pl-[100px] laptop:pr-0 py-10 laptop:py-0 gap-3 z-10">
         <p className="text-gray-400 text-sm">Hi I am</p>
         <p className="text-white text-lg font-semibold">Joel Dimayuga</p>
         <h1 className="text-white text-4xl laptop:text-[52px] font-extrabold leading-tight">
