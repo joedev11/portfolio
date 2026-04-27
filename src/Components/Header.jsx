@@ -1,68 +1,103 @@
-import React from 'react';
+import React from "react";
 
 const Header = () => {
-    return (
-        <section id="home" className="bg-[#1D1F2A] w-full h-[calc(100vh-72px)] flex flex-col">
-            {/* Main hero content */}
-            <div className="flex flex-col laptop:flex-row items-center flex-1 mx-10 laptop:mx-[100px] pt-10 laptop:pt-0">
-                {/* Left: Text */}
-                <div className="flex flex-col laptop:w-1/2 laptop:pl-[80px] laptop:justify-center">
-                    <h1 className="text-white text-5xl laptop:text-[65px] font-bold">
-                        Hello<span className="text-[#FF7A5C]">.</span>
-                    </h1>
-                    <div className="relative flex items-end mt-4 gap-3">
-                        <span className="hidden laptop:block absolute right-[calc(100%-1rem)] bottom-[6px] h-[1.5px] w-screen bg-[#FF7A5C]"></span>
-                        <p className="text-gray-300 text-xl laptop:text-2xl pl-7">I'm Joel</p>
-                    </div>
-                    <h2 className="text-white text-2xl laptop:text-[46px] font-bold mt-3 laptop:mt-4 leading-tight">
-                        Software Developer
-                    </h2>
-                    <div className="flex gap-4 mt-8 laptop:mt-12">
-                        <a href="#contact-me">
-                            <button className="bg-[#FF7A5C] text-white font-bold py-3 px-6 laptop:py-4 laptop:px-8 rounded hover:opacity-80 ease-in-out duration-300">
-                                Got a project?
-                            </button>
-                        </a>
-                        <button className="border-2 border-[#FF7A5C] text-white font-bold py-3 px-6 laptop:py-4 laptop:px-8 rounded hover:bg-[#FF7A5C] hover:text-[#1D1F2A] ease-in-out duration-300">
-                            My Resume
-                        </button>
-                    </div>
-                </div>
+  return (
+    <section
+      id="home"
+      className="bg-[#1a1a1a] w-full min-h-[calc(100vh-72px)] flex relative overflow-hidden"
+    >
+      {/* Left: Text — vertically centered */}
+      <div className="flex flex-col justify-center w-full laptop:w-1/2 px-8 laptop:pl-[100px] laptop:pr-0 py-16 laptop:py-0 gap-3 z-10">
+        <p className="text-gray-400 text-sm">Hi I am</p>
+        <p className="text-white text-lg font-semibold">Joel Dimayuga</p>
+        <h1 className="text-white text-4xl laptop:text-[52px] font-extrabold leading-tight">
+          Software Developer
+        </h1>
 
-                {/* Right: Image with circular accent */}
-                <div className="relative flex items-center justify-center laptop:w-1/2 mt-12 laptop:mt-0">
-                    {/* Decorative left bracket */}
-                    <span className="hidden laptop:block absolute top-24 left-0 text-[80px] font-bold select-none cursor-default transition-all duration-300 bracket-left">{'<'}</span>
-                    {/* Circle behind image */}
-                    <div className="relative flex items-center justify-center">
-                        {/* Glow */}
-                        <div className="absolute w-[200px] h-[200px] laptop:w-[380px] laptop:h-[380px] rounded-full bg-[#FF7A5C] opacity-20 blur-[60px]"></div>
-                        <div className="absolute w-[220px] h-[230px] bottom-5 laptop:w-[420px] laptop:h-[430px] rounded-full border-[25px] border-[#FF7A5C] opacity-50"></div>
-                        <img
-                            src="/Images/img-self.png"
-                            alt="self-img"
-                            className="relative z-10 h-[260px] laptop:h-[580px] object-cover"
-                        />
-                    </div>
-                    {/* Decorative right bracket */}
-                    <span className="hidden laptop:block absolute right-0 bottom-24 text-[80px] font-bold select-none cursor-default bracket-left">{'>'}</span>
-                </div>
-            </div>
+        {/* Social icons */}
+        <div className="flex items-center gap-4 mt-1">
+          <a href="https://github.com/joeldimayuga" target="_blank" rel="noopener noreferrer"
+            className="text-gray-500 hover:text-[#FF7A5C] transition-colors duration-200">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/joeldimayuga" target="_blank" rel="noopener noreferrer"
+            className="text-gray-500 hover:text-[#FF7A5C] transition-colors duration-200">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            className="text-gray-500 hover:text-[#FF7A5C] transition-colors duration-200">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            className="text-gray-500 hover:text-[#FF7A5C] transition-colors duration-200">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+          </a>
+        </div>
 
-            {/* Bottom tech bar */}
-            <div className="bg-[#22242F] border-gray-700 mt-auto opacity-75">
-                <div className="flex flex-wrap justify-center laptop:justify-between gap-x-4 gap-y-2 px-10 laptop:px-[180px] py-4 text-gray-400 opacity-75 text-sm laptop:text-base tracking-wider">
-                    <span>HTML5</span>
-                    <span>CSS</span>
-                    <span>Javascript</span>
-                    <span>Node.js</span>
-                    <span>React</span>
-                    <span>Git</span>
-                    <span>Github</span>
-                </div>
-            </div>
-        </section>
-    );
+        {/* Buttons */}
+        <div className="flex gap-4 mt-3">
+          <a href="#contact-me">
+            <button className="bg-[#FF7A5C] text-white font-bold py-3 px-7 rounded hover:opacity-80 ease-in-out duration-300">
+              Hire Me
+            </button>
+          </a>
+          <a href="/Joel_Dimayuga_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="border border-gray-500 text-white font-bold py-3 px-7 rounded hover:border-[#FF7A5C] hover:text-[#FF7A5C] ease-in-out duration-300">
+              Download CV
+            </button>
+          </a>
+        </div>
+
+        {/* Stats */}
+        <div className="flex gap-3 mt-6">
+          <div className="bg-[#222] rounded-lg px-5 py-3 flex flex-col">
+            <span className="text-white text-xl font-extrabold">3+</span>
+            <span className="text-gray-500 text-xs mt-1">Years Experience</span>
+          </div>
+          <div className="bg-[#222] rounded-lg px-5 py-3 flex flex-col">
+            <span className="text-white text-xl font-extrabold">10+</span>
+            <span className="text-gray-500 text-xs mt-1">Projects Done</span>
+          </div>
+          <div className="bg-[#222] rounded-lg px-5 py-3 flex flex-col">
+            <span className="text-white text-xl font-extrabold">5+</span>
+            <span className="text-gray-500 text-xs mt-1">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Right: Person over circle — absolutely fills right half */}
+      <div className="hidden laptop:block absolute right-0 top-0 w-1/2 h-full">
+        {/* Radial gradient behind image */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: "radial-gradient(ellipse 70% 80% at 60% 60%, rgba(255,122,92,0.18) 0%, #1a1a1a 70%)",
+          }}
+        />
+
+        {/* Person image */}
+        <img
+          src="/Images/img-self.png"
+          alt="Joel Dimayuga"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10 w-auto"
+          style={{
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "top center",
+            filter: "grayscale(100%) contrast(1.05)",
+          }}
+        />
+      </div>
+    </section>
+  );
 };
 
 export default Header;

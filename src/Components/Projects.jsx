@@ -1,8 +1,44 @@
-'use client'
+"use client";
 
 import React from "react";
 
 const projects = [
+  {
+    title: "Elorde Alabang Website",
+    tags: ["Typescript", "NextJs", "Tailwind CSS"],
+    description:
+      "A website built for Elorde Alabang, a premier boxing gym in the Philippines. The site features class schedules, workout offerings, and upcoming events.",
+    github: "https://github.com/joedev11/elorde_fit",
+    link: "https://elorde-fit.vercel.app/",
+    imageUrl: "/Images/Elorde-fit-site.png",
+  },
+  {
+    title: "Fitbuddy",
+    tags: ["Typescript", "NextJs", "Tailwind CSS"],
+    description:
+      "A website that helps you track progress with integrated AI which you can chat with to get workout recommendations, nutrition advice, and motivation. Built with Next.js and styled with Tailwind CSS for a sleek user experience.",
+    github: "https://github.com/joedev11/fitbuddy",
+    link: "https://fitbuddy-three.vercel.app/",
+    imageUrl: "/Images/fitbuddy.png",
+  },
+  {
+    title: "Arkisouth Website",
+    tags: ["Typescript", "NextJs", "Tailwind CSS"],
+    description:
+      "A website built for Arkisouth, a local architecture firm. The site features a portfolio of their work and contact information.",
+    github: "https://github.com/joedev11/arkisouth",
+    link: "https://arkisouth.vercel.app/",
+    imageUrl: "/Images/arkisouth.png",
+  },
+  {
+    title: "Smellscents Website",
+    tags: ["Typescript", "NextJs", "Tailwind CSS"],
+    description:
+      "A website built for Smellscents, a local perfume business. The site features a product catalog, shopping cart, and secure checkout process.",
+    github: "https://github.com/joedev11/Smellscents",
+    link: "https://smellscents.vercel.app/",
+    imageUrl: "/Images/smellscents.png",
+  },
   {
     title: "StreamFlix",
     tags: ["HTML", "CSS", "JavaScript", "React"],
@@ -21,39 +57,36 @@ const projects = [
     link: "https://kumori-art.netlify.app/",
     imageUrl: "/Images/kumori-art.png",
   },
-  {
-    title: "Datepicker Component",
-    tags: ["HTML", "CSS", "JavaScript"],
-    description:
-      "A fully custom Datepicker component built from scratch without any library. Supports date selection, navigation, and clean UI styling.",
-    github: "https://github.com/joedev11",
-    link: "https://datepicker-trend.netlify.app/",
-    imageUrl: "/Images/Datepicker.png",
-  },
-  {
-    title: "Weather Dashboard",
-    tags: ["React", "REST API", "Tailwind CSS"],
-    description:
-      "A weather dashboard built for a client that displays real-time weather conditions, forecasts, and location-based data. Integrated with a live weather API to provide accurate and up-to-date information.",
-    github: null,
-    link: null,
-    imageUrl: "/Images/coming-soon.jpg",
-  },
 ];
 
-const ProjectCard = ({ title, tags, description, github, link, imageUrl, reverse }) => (
-  <div className={`flex flex-col laptop:flex-row gap-10 items-center ${reverse ? "laptop:flex-row-reverse" : ""}`}>
+const ProjectCard = ({
+  title,
+  tags,
+  description,
+  github,
+  link,
+  imageUrl,
+  reverse,
+}) => (
+  <div
+    className={`flex flex-col laptop:flex-row gap-10 items-center ${reverse ? "laptop:flex-row-reverse" : ""}`}
+  >
     {/* Text side */}
     <div className="flex flex-col laptop:w-1/2 gap-4">
       <h3 className="text-white text-2xl laptop:text-3xl font-bold">{title}</h3>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag, i) => (
-          <span key={i} className="border border-gray-600 text-gray-300 text-xs px-3 py-1 rounded-full">
+          <span
+            key={i}
+            className="border border-gray-600 text-gray-300 text-xs px-3 py-1 rounded-full"
+          >
             {tag}
           </span>
         ))}
       </div>
-      <p className="text-gray-400 text-sm laptop:text-base leading-7">{description}</p>
+      <p className="text-gray-400 text-sm laptop:text-base leading-7">
+        {description}
+      </p>
       {(github || link) && (
         <div className="flex items-center gap-6 mt-2">
           {github && (
@@ -64,7 +97,12 @@ const ProjectCard = ({ title, tags, description, github, link, imageUrl, reverse
             </a>
           )}
           {link && (
-            <a href={link} target="_blank" rel="noopener noreferrer" className="text-white text-sm font-medium hover:text-[#FF7A5C] duration-300 flex items-center gap-1">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-sm font-medium hover:text-[#FF7A5C] duration-300 flex items-center gap-1"
+            >
               View project <span>↗</span>
             </a>
           )}
@@ -85,10 +123,15 @@ const ProjectCard = ({ title, tags, description, github, link, imageUrl, reverse
 
 const Projects = () => {
   return (
-    <section id="portfolio" className="w-full bg-[#1D1F2A] py-20 laptop:pb-28 laptop:pt-20">
+    <section
+      id="portfolio"
+      className="w-full bg-[#1D1F2A] py-20 laptop:pb-28 laptop:pt-20"
+    >
       {/* Heading */}
       <div className="flex flex-col items-center mb-16">
-        <h2 className="text-white text-4xl laptop:text-5xl font-bold">Projects</h2>
+        <h2 className="text-white text-4xl laptop:text-5xl font-bold">
+          Projects
+        </h2>
         <div className="w-[2px] h-14 bg-[#FF7A5C] mt-8 opacity-60"></div>
         <div className="w-[6px] h-[6px] rounded-full bg-[#FF7A5C] mt-1"></div>
       </div>

@@ -6,7 +6,7 @@ import Footer from '../src/Components/Footer'
 
 export default function Home() {
   return (
-    <main className="p-0 m-0 bg-[#171A22] relative flex flex-col items-center w-full min-h-screen mx-auto overflow-hidden">
+    <main className="p-0 m-0 bg-[#1a1a1a] relative flex flex-col items-center w-full min-h-screen mx-auto overflow-hidden">
       {/* Background gradient blobs */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <div className="absolute top-[10%] left-[-100px] w-[400px] h-[400px] rounded-full bg-[#FF7A5C] opacity-[0.04] blur-[120px]" />
