@@ -125,7 +125,7 @@ const Projects = () => {
   return (
     <section
       id="portfolio"
-      className="w-full bg-[#1D1F2A] py-20 laptop:pb-28 laptop:pt-20"
+      className="w-full bg-[#1a1a1a] py-20 laptop:pb-28 laptop:pt-20"
     >
       {/* Heading */}
       <div className="flex flex-col items-center mb-16">

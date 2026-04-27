@@ -26,6 +26,7 @@ const Navbar = () => {
         <div className="hidden laptop:flex items-center gap-1">
           <a href="#home" className="px-4 py-2 text-sm text-[#FF7A5C] font-semibold tracking-wide">Home</a>
           <a href="#about-me" className="px-4 py-2 text-sm text-gray-400 hover:text-white tracking-wide transition-colors duration-200">About me</a>
+          <a href="#experience" className="px-4 py-2 text-sm text-gray-400 hover:text-white tracking-wide transition-colors duration-200">Experience</a>
           <a href="#portfolio" className="px-4 py-2 text-sm text-gray-400 hover:text-white tracking-wide transition-colors duration-200">Portfolio</a>
           <a href="#contact-me" className="px-4 py-2 text-sm text-gray-400 hover:text-white tracking-wide transition-colors duration-200">Contact me</a>
         </div>
@@ -43,6 +44,7 @@ const Navbar = () => {
         <div className="laptop:hidden flex flex-col bg-[#1a1a1a] border-t border-[#2a2a2a]">
           <a href="#home" onClick={toggleNav} className="px-8 py-3 text-sm text-[#FF7A5C] font-semibold tracking-wide">Home</a>
           <a href="#about-me" onClick={toggleNav} className="px-8 py-3 text-sm text-gray-400 hover:text-white tracking-wide">About me</a>
+          <a href="#experience" onClick={toggleNav} className="px-8 py-3 text-sm text-gray-400 hover:text-white tracking-wide">Experience</a>
           <a href="#portfolio" onClick={toggleNav} className="px-8 py-3 text-sm text-gray-400 hover:text-white tracking-wide">Portfolio</a>
           <a href="#contact-me" onClick={toggleNav} className="px-8 py-3 text-sm text-gray-400 hover:text-white tracking-wide">Contacts</a>
           <div className="px-8 py-4">

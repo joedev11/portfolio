@@ -29,7 +29,7 @@ const ContactMe = () => {
     };
 
     return (
-        <section id="contact-me" className="w-full bg-[#171A22] py-20 laptop:py-28">
+        <section id="contact-me" className="w-full bg-[#1a1a1a] py-20 laptop:py-28">
             <div className="mx-10 laptop:mx-auto laptop:w-[80%]">
 
                 {/* Section label with line */}

@@ -1,5 +1,6 @@
 import Header from '../src/Components/Header'
 import AboutMe from '../src/Components/AboutMe'
+import Experience from '../src/Components/Experience'
 import Projects from '../src/Components/Projects'
 import ContactMe from '../src/Components/ContactMe'
 import Footer from '../src/Components/Footer'
@@ -18,6 +19,7 @@ export default function Home() {
         <Header />
         <AboutMe />
         <Projects />
+        <Experience />
         <ContactMe />
         <Footer />
       </div>

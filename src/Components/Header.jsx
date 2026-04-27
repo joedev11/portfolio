@@ -29,7 +29,7 @@ const Header = () => {
 
       {/* Left: Text — vertically centered */}
       <div className="flex flex-col justify-center w-full laptop:w-1/2 px-8 laptop:pl-[100px] laptop:pr-0 py-10 laptop:py-0 gap-3 z-10">
-        <p className="text-gray-400 text-sm">Hi I am</p>
+        <p className="text-gray-400 text-sm">Hi, I am</p>
         <p className="text-white text-lg font-semibold">Joel Dimayuga</p>
         <h1 className="text-white text-4xl laptop:text-[52px] font-extrabold leading-tight">
           Software Developer
