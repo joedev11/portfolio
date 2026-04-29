@@ -80,7 +80,7 @@ const Header = () => {
         {/* Stats */}
         <div className="flex gap-3 mt-6">
           <div className="bg-[#222] rounded-lg px-5 py-3 flex flex-col">
-            <span className="text-white text-xl font-extrabold">3+</span>
+            <span className="text-white text-xl font-extrabold">4+</span>
             <span className="text-gray-500 text-xs mt-1">Years Experience</span>
           </div>
           <div className="bg-[#222] rounded-lg px-5 py-3 flex flex-col">
