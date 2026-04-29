@@ -18,7 +18,7 @@ const projects = [
     description:
       "A website that helps you track progress using Strava API. Integrated AI that you can chat with to get workout recommendations, nutrition advice, and motivation. Built with Next.js and styled with Tailwind CSS for a sleek user experience.",
     github: "https://github.com/joedev11/fitbuddy",
-    link: "https://fitbuddy-three.vercel.app/",
+    link: null,
     imageUrl: "/Images/fitbuddy.png",
   },
   {
