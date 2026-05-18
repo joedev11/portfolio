@@ -40,6 +40,15 @@ const projects = [
     imageUrl: "/Images/smellscents.png",
   },
   {
+    title: "JCICreed Trucking Services Website",
+    tags: ["Typescript", "NextJs", "Tailwind CSS"],
+    description:
+      "A website built for JCICreed Trucking Services, a local trucking company. The site features a services page and contact information.",
+    github: "https://github.com/joedev11/jcicreed",
+    link: "https://jcicreed.vercel.app/",
+    imageUrl: "/Images/jcicreed.png",
+  },
+  {
     title: "StreamFlix",
     tags: ["HTML", "CSS", "JavaScript", "React"],
     description:
